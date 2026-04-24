@@ -1,0 +1,19 @@
+backend:
+     name: git-gateway
+     branch: main
+
+   media_folder: "images"
+
+   collections:
+     - name: "settings"
+       label: "Site Settings"
+       files:
+         - name: "general"
+           label: "General Info"
+           file: "_data/settings.json"
+           fields:
+             - { label: "Site Title", name: "title", widget: "string" }
+             - { label: "Hero Headline", name: "hero_headline", widget: "string" }
+             - { label: "Hero Subtext", name: "hero_sub", widget: "string" }
+             - { label: "About Text", name: "about_text", widget: "text" }
+             - { label: "Contact Email", name: "email", widget: "string" }
